@@ -1,0 +1,91 @@
+.warranty-bg{
+    // background-color: $color-bg-ligth;
+    // height: 420px;
+    // width: 100%;
+}
+
+.warranty__title{
+    @include text (20px, 800, 30px, $primary-color-dark);
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.warranty__list{
+    background-color: $color-bg-ligth;
+    padding-top: 22px;
+    padding-left: 38px;
+}
+.warranty__item{
+    position: relative;
+    @include text (11px, 500, 20px, $primary-color-dark);
+    padding-bottom: 22px;
+    border-left: 2px dotted $color-border-ligth;
+    padding-left: 30px;
+    text-overflow: ellipsis;
+}
+
+.warranty__item:nth-last-child(1){
+    border: transparent;
+}
+
+.warranty__item::before{
+    position: absolute;
+    left: -8px;
+    display: block;
+    content: url(../../images/icons/fire-orange.svg);
+    width: 16px;
+    height: 20px;
+}
+.warranty__text-orange{
+    @include text (11px, 500, 20px, $accent-color);
+}
+
+@media (min-width: 768px){
+    .warranty__title{
+        @include text (26px, 800, 30px, $primary-color-dark);
+    }
+.warranty__list{
+    padding-bottom: 10px;
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-top: 38px;
+}
+
+}
+
+@media (min-width: 1280px){
+    .warranty__title{
+        @include text (42px, 800, 62px, $primary-color-dark);
+    }
+    .warranty__list{
+        padding-right: 134px;
+        padding-left: 118px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .warranty__item{
+        @include text (18px, 500, 29px, $primary-color-dark);
+    }
+    .warranty__text-orange{
+        @include text (18px, 500, 29px, $accent-color);
+    }
+
+
+}
+
+@media (min-width: 1680px){
+    .warranty__title{
+        @include text (46px, 800, 62px, $primary-color-dark);
+        padding-top: 136px;
+        margin-bottom: 38px;
+    }
+    .warranty__item{
+        @include text (21px, 500, 29px, $primary-color-dark);
+    }
+    .warranty__text-orange{
+        @include text (21px, 500, 29px, $accent-color);
+    }
+
+
+}

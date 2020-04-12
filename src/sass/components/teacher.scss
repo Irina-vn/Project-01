@@ -1,0 +1,111 @@
+.teacher{
+    padding-top: 242px;
+}
+
+
+.teacher__title{
+@include text (20px, 800, 30px, $primary-color-dark);
+}
+
+.teacher__image{
+    padding-top: 22px;
+    margin-bottom: 18px;
+}
+
+.teacher__name{
+    @include text (16px, 700, 30px, $primary-color-dark);
+    border-bottom: 1px solid $color-border-ligth;
+    margin-bottom: 16px;
+}
+
+.teacher__list{
+    padding-left: 38px;
+    padding-top: 24px;
+}
+
+.teacer__item{
+position: relative;
+@include text (13px, 600, 20px, $primary-color-dark);
+margin-bottom: 24px;
+}
+
+.teacer__item::before{
+    position: absolute;
+    left: -34px;
+    display: block;
+    content: url(../../images/icons/check.svg);
+    width: 16px;
+    height: 16px;
+}
+
+.teacher-about__list{
+    padding-right: 12px;
+    padding-left: 18px;
+}
+
+.teacher-about__item{
+    @include text (11px, 500, 20px, $color-text-grey);
+    padding-bottom: 22px;
+}
+.teacher-about__link{
+    @include text (11px, 500, 29px, $accent-color);
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+@media (min-width: 768px){
+.teacher__title{
+    @include text (26px, 800, 33px, $primary-color-dark);
+    padding-bottom: 56px;
+}
+.section__teacher{
+        display: flex;
+}
+.teacher__foto{
+    padding-right: 46px;
+}
+
+.teacher__name{
+    @include text (20px, 700, 30px, $primary-color-dark);
+    padding-top: 86px;
+}
+.teacher-about__list{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+}
+
+@media (min-width: 1280px){
+.teacher__title{
+    @include text (42px, 800, 62px, $primary-color-dark);
+}
+.teacher__name{
+    @include text (29px, 700, 29px, $primary-color-dark);
+}
+.teacher-about__item{
+    @include text (17px, 500, 29px, $color-text-grey);
+}
+.teacher-about__link{
+    @include text (17px, 500, 29px, $accent-color);
+}
+
+
+}
+@media (min-width: 1680px){
+    .teacher{
+        padding-top: 312px;
+    }
+    .teacher__title{
+        @include text (46px, 800, 62px, $primary-color-dark);
+    }
+    .teacher__info{
+        padding-right: 98px;
+    }
+    .teacher__list{
+        padding-right: 256px;
+    }
+
+
+}

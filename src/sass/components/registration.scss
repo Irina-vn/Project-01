@@ -1,0 +1,165 @@
+
+.registration{
+    background-image: url(../../images/bg-form.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.registration__title{
+    @include text (14px, 800, 26px, $color-text-white);
+    text-overflow: ellipsis;
+    text-align: center;
+    margin-bottom: 16px;
+    padding-right: 20px;
+    padding-left: 24px;
+    padding-top: 52px;
+}
+
+.registration__title--orange{
+    @include text (14px, 800, 26px, $accent-color);
+}
+
+.registration__text{
+    @include text (11px, 600, 20px, $color-text-white);
+    text-overflow: ellipsis;
+    text-align: center;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.registration__text--orange{
+    @include text (11px, 600, 20px, $accent-color);
+}
+
+
+.form__input{
+    @include text (13px, 600, 38px, $color-text-white);
+    display: block;
+    width: 280px;
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    margin-top: 15px;
+    border: 1px solid $color-text-white;
+}
+
+.form__input:nth-last-of-type(1){
+    margin-bottom: 56px;
+}
+
+input::placeholder{
+    color: $color-text-white;
+}
+
+input:focus:invalid:required{
+    outline: 1px solid #c20303;
+}
+
+.form__btn{
+    display: flex;
+    justify-content: center;
+}
+.form__button{
+    @extend %button;
+    @include text (11px, 600, 20px, $color-text-white);
+    text-transform: uppercase;
+    background-color: $accent-color;
+    padding: 14px;
+    margin-bottom: 36px;
+}
+
+@media (min-width: 768px){
+.registration__title{
+    @include text (22px, 800, 38px, $color-text-white);
+}
+.registration__title--orange{
+    @include text (22px, 800, 38px, $accent-color);
+}
+.registration__text{
+    @include text (15px, 600, 20px, $color-text-white);
+}
+.registration__text--orange{
+    @include text (15px, 600, 20px, $accent-color);
+}
+.form__input{
+    width: 400px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.contacts__link-instagram{
+    padding-left: 30px;
+}
+.form__button{
+    letter-spacing: 2px;
+}
+
+}
+
+@media (min-width: 1280px){
+    .registration__title{
+        @include text (37px, 800, 50px, $color-text-white);
+        padding-top: 100px;
+    }
+    .registration__title--orange{
+        @include text (37px, 800, 50px, $accent-color);
+    }
+    .registration__text{
+        @include text (18px, 600, 24px, $color-text-white);
+        padding-left: 336px;
+        padding-right: 336px;
+    }
+    .registration__text--orange{
+        @include text (18px, 600, 24px, $accent-color);
+    }
+
+    .form__input{
+        @include text (21px, 600, 38px, $color-text-white);
+        width: 720px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-bottom: 28px;
+    }
+    .form__input:nth-last-of-type(1){
+        margin-bottom: 48px;
+    }
+    .form__button{
+        @include text (14px, 600, 20px, $color-text-white);
+        padding: 30px 22px;
+        letter-spacing: 4px;
+        margin-bottom: 98px;
+    }
+
+}
+
+@media (min-width: 1680px){
+    .registration__title{
+        @include text (37px, 800, 50px, $color-text-white);
+        padding-top: 124px;
+        margin-bottom: 54px;
+    }
+    .registration__text{
+        @include text (25px, 600, 38px, $color-text-white);
+        padding-left: 278px;
+        padding-right: 278px;
+        margin-bottom: 50px;
+    }
+    .registration__text--orange{
+        @include text (25px, 600, 38px, $accent-color);
+    }
+
+    .form__input{
+        @include text (31px, 600, 38px, $color-text-white);
+        width: 622px;
+    }
+    .form__input:nth-last-of-type(1){
+        margin-bottom: 56px;
+    }
+    .form__button{
+        margin-bottom: 102px;
+    }
+
+
+}

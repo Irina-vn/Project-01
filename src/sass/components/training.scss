@@ -1,0 +1,208 @@
+.training__title{
+    @include text (20px, 800, 30px, $primary-color-dark);
+    padding-top: 60px;
+    margin-bottom: 32px;
+}
+
+.training__text-grey{
+    @include text (15px, 700, 20px, $primary-color-light);
+    color: $primary-color-light;
+}
+
+.training__text-dark{
+    @include text (15px, 700, 20px, $primary-color-dark);
+    margin-bottom: 36px;
+}
+
+.text-orange{
+    @include text (15px, 700, 20px, $accent-color);
+}
+
+.training__button{
+    @extend %button;
+    font-weight: 700;
+    font-size: 11px;
+    background-color: $accent-color;
+    padding: 14px 20px;
+    margin-left: 16px;
+    margin-bottom: 36px;
+}
+
+.training__button a{
+    color: $color-text-white;
+}
+.training__image{
+    margin: 0 auto;
+}
+.training__list{
+    padding-top: 86px;
+    padding-right:32px ;
+    padding-left: 50px;
+    margin-bottom: 50px;
+}
+
+.training__item{
+    @include text (13px, 700, 20px, $primary-color-dark);
+    display: flex;
+}
+.training__svg{
+    position: relative;
+    display: block;
+    fill: $accent-color;
+    border: 2px solid $accent-color;
+    padding-bottom: 8px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 10px;
+    margin-bottom: 25px;
+}
+.training__svg::before{
+    position: absolute;
+    top: 12px;
+    left: 60px;
+    content: "";
+    height: 36px;
+    width: 4px;
+    background-color: $color-text-white;
+}
+
+.training__svg svg{
+    width: 35px;
+    height: 35px;
+}
+.training__text{
+    padding-left: 12px;
+}
+
+
+@media (min-width: 768px){
+.training__title{
+    @include text (26px, 800, 33px, $primary-color-dark);
+}
+.training{
+    display: flex;
+    align-items: center;
+}
+.training__info{
+    max-width: 284px;
+}
+
+.training__list{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.training__button{
+    margin-left: 0px;
+}
+
+
+}
+
+@media (min-width: 1280px){
+.training__title{
+    @include text (48px, 800, 58px, $primary-color-dark);
+}
+.training__info{
+    max-width: 478px;
+}
+.training__text-grey{
+    @include text (18px, 700, 26px, $primary-color-light);
+}
+.training__text-dark{
+    @include text (18px, 700, 26px, $primary-color-dark);
+    margin-bottom: 36px;
+}
+.text-orange{
+    @include text (18px, 700, 26px, $accent-color);
+}
+.training__button{
+    font-size: 12px;
+    padding: 20px 28px;
+    letter-spacing: 2px;
+}
+
+.training__image{
+    padding-top: 50px;
+}
+.training__item{
+    position: relative;
+    margin-right: 366px;
+}
+.training__item:nth-last-child(1){
+    margin-right: 0px;
+}
+
+.training__text{
+    position: absolute;
+    left: 46px;
+    top: 10px;
+    min-width: 240px;
+}
+.training__list{
+    display: flex;
+    justify-content: end;
+}
+
+}
+
+@media (min-width: 1680px){
+.training__title{
+    @include text (58px, 800, 76px, $primary-color-dark);
+}
+.training__info{
+    max-width: 610px;
+}
+.training__text-grey{
+    @include text (21px, 700, 33px, $primary-color-light);
+}
+.training__text-dark{
+    @include text (21px, 700, 33px, $primary-color-dark);
+}
+.text-orange{
+    @include text (21px, 700, 33px, $accent-color);
+}
+.training__button{
+    font-size: 14px;
+    padding: 30px 22px;
+    letter-spacing: 2px;
+}
+.training__item{
+    @include text (21px, 700, 33px, $primary-color-dark);
+    
+}
+.training__item:nth-of-type(1){
+    margin-right: 422px;
+}
+.training__item:nth-of-type(2){
+    margin-right: 322px;
+}
+.training__text{
+    min-width: 320px;
+    top: 22px;
+    left: 78px;
+}
+.training__svg{
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 24px;
+}
+.training__svg::before{
+    height: 74px;
+    top: 16px;
+    left: 107px;
+}
+
+.training__svg svg{
+    width: 44px;
+    height: 44px;
+}
+.training__list{
+    padding-top: 110px;
+    margin-bottom: 122px;
+}
+
+
+}

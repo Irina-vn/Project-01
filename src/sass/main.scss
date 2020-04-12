@@ -1,0 +1,29 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'helpers/placeholder.scss';
+@import 'helpers/variables.scss';
+@import 'helpers/mixins.scss';
+@import 'normalize.scss';
+@import 'base.scss';
+
+
+//COMPNENTS//
+
+@import 'components/wrapper.scss';
+@import 'components/link.scss';
+@import 'components/list.scss';
+@import 'components/nav.scss';
+@import 'components/title.scss';
+@import 'components/training.scss';
+@import 'components/problem.scss';
+@import 'components/preparation.scss';
+@import 'components/program.scss';
+@import 'components/advantage.scss';
+@import 'components/teacher.scss';
+@import 'components/warranty.scss';
+@import 'components/comments.scss';
+@import 'components/registration.scss';
+@import 'components/contacts.scss';
+@import 'components/footer.scss';

@@ -1,0 +1,11 @@
+@mixin text ($size, $weight, $height, $color){
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    color: $color;
+}
+
+// @mixin pceudo ($display, $content) {
+//     display: $content;
+//     content: $content;
+// }

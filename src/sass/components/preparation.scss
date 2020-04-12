@@ -1,0 +1,166 @@
+.preparation__title{
+    @include text (20px, 800, 30px, $primary-color-dark);
+    padding-top: 256px;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.card--preparation{
+    display: block;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 32px;
+    width: 290px;
+    height: 270px;
+    margin-bottom: 16px;
+    box-shadow: 8px 8px 36px 10px rgba(0,0,0,0.11);
+    overflow: hidden;
+    padding-bottom: 34px;
+}
+
+.card__subtitle--preparation{
+    @include text (13px, 700, 20px, $primary-color-dark);
+    text-align: center;
+    position: relative;
+}
+
+.card__svg-preparation{
+    display: block;
+    width: 48px;
+    height: 41px;
+    fill: #ff6b08;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.card--preparation:hover .card__svg-preparation{
+    fill: $color-text-white;
+}
+
+.card__subtitle--preparation::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: $accent-color;
+    top: 50px;
+    left: 94px;
+}
+
+.card--preparation:hover .card__subtitle--preparation:after{
+    background-color: $color-text-white;
+}
+
+
+.card__text--preparation{
+    @include text (11px, 400, 20px, $primary-color-light);
+    padding-top: 28px;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.card--preparation:hover{
+    background-color: $accent-color;
+    color: $color-text-white;
+}
+
+.card--preparation:hover .card__text--preparation{
+    color: $color-text-white;
+}
+
+.card--preparation:hover .card__subtitle--preparation{
+    color: $color-text-white;
+}
+
+
+@media (min-width: 768px){
+.preparation__title{
+    @include text (26px, 800, 33px, $primary-color-dark);
+}
+.list-cards--preparation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card--preparation{
+    margin-bottom: 22px;
+}
+.card--preparation:nth-last-of-type(-n+2){
+    margin-bottom: 50px;
+}
+
+.card--preparation:nth-last-child(2n){
+    margin-right: 22px;
+}
+
+}
+
+@media (min-width: 1280px){
+.preparation__title{
+    @include text (42px, 800, 62px, $primary-color-dark);
+    text-align: start;
+}
+.card--preparation{
+    margin-right: 20px;
+    width: 390px;
+    height: 342px;
+    margin-bottom: 20px;
+}
+.card--preparation:nth-last-child(2n){
+    margin-right: 20px;
+}
+.card--preparation:nth-of-type(3n){
+    margin-right: 0px;
+}
+.card__subtitle--preparation::after{
+    top: 72px;
+    left: 144px;
+}
+.card__subtitle--preparation{
+    @include text (18px, 700, 29px, $primary-color-dark);
+}
+
+.card__text--preparation{
+    @include text (15px, 400, 20px, $primary-color-light);
+}
+.card--preparation:nth-last-of-type(-n+3){
+    margin-bottom: 100px;
+}
+
+}
+
+@media (min-width: 1680px){
+.preparation__title{
+    @include text (46px, 800, 62px, $primary-color-dark);
+    padding-top: 290px;
+}
+.card__subtitle--preparation{
+    @include text (21px, 700, 29px, $primary-color-dark);
+}
+
+.card__text--preparation{
+    @include text (19px, 400, 29px, $primary-color-light);
+}
+.card--preparation{
+    margin-right: 22px;
+    width: 430px;
+    height: 396px;
+    margin-bottom: 22px;
+}
+.card--preparation:nth-last-child(2n){
+    margin-right: 22px;
+}
+.card--preparation:nth-of-type(3n){
+    margin-right: 0px;
+}
+.card__subtitle--preparation::after{
+    left: 164px;
+}
+.card--preparation:nth-last-of-type(-n+3){
+    margin-bottom: 130px;
+}
+
+
+
+}

@@ -1,0 +1,90 @@
+.contacts__phone{
+    @include text (18px, 500, 18px, $primary-color-dark);
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+}
+
+.contacts__phone::before{
+    display: block;
+    content: url(../../images/icons/tel.svg);
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 26px;
+    left: 20px;
+}
+.contact__icon--phone{
+    display: block;
+    width: 20px;
+    height: 22px;
+}
+.contacts__instagram{
+    margin: 0 auto;
+    padding-top: 26px;
+    margin-bottom: 20px;
+}
+
+.contacts__logo{
+    margin: 0 auto;
+    margin-bottom: 14px;
+}
+
+@media (min-width: 768px){
+.contacts__phone{
+    @include text (20px, 600, 38px, $primary-color-dark);
+    order: 2;
+    padding-top: 0px;
+    padding-left: 114px;
+    padding-right: 30px;
+    border-right: 1px solid #e0e0e0;
+}
+.contacts__phone::before{
+    top: 8px;
+    left: 86px;
+}
+.section-contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts__link-instagram{
+    order: 3;
+}
+.contacts__logo{
+    margin: 0px;
+}
+
+
+}
+@media (min-width: 1280px){
+    .section-contacts{
+        justify-content: start;
+    }
+    .contacts{
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+    .contacts__logo{
+        margin: 0px;
+    }
+
+    .contacts__phone{
+        @include text (27px, 600, 38px, $primary-color-dark);
+        padding-left: 312px;
+    }
+    .contacts__phone::before{
+        left: 332px;
+    }
+
+}
+
+@media (min-width: 1280px){
+    .contacts__phone{
+        padding-left: 360px;
+    }
+
+
+
+}

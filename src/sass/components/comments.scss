@@ -1,0 +1,255 @@
+.comments__title{
+    @include text (20px, 800, 30px, $primary-color-dark);
+    text-align: center;
+    padding-top: 44px;
+    margin-bottom: 26px;
+}
+
+.slider__section{
+    position: relative;
+}
+
+.slider__card{
+position: relative;
+// height: 394px;
+padding-top: 22px;
+padding-right: 28px;
+padding-left: 28px;
+padding-bottom: 32px;
+box-shadow: 8px 8px 36px 10px rgba(0,0,0,0.11);
+}
+
+.slider__img{
+    border-radius: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.slider__card svg{
+    display: block;
+    width: 28px;
+    height: 14px;
+    margin: auto;
+    margin-bottom: 18px;
+}
+
+.slider__name{
+    @include text (13px, 700, 29px, $accent-color);
+    text-align: center;
+}
+.slider__about{
+    @include text (11px, 500, 16px, $color-text-light);
+    text-align: center;
+    text-overflow: ellipsis;
+    margin-bottom: 14px;
+}
+.slider__blok--text{
+    @include text (11px, 500, 20px, $primary-color-dark);
+    overflow: hidden;
+    line-height: 20px;
+    line-clamp: 5;
+    box-orient: vertical;
+    text-overflow: ellipsis;
+    max-height: 96px;
+}
+
+.slider__text{
+    @include text (11px, 500, 20px, $primary-color-dark);
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.slider__link{
+    position: absolute;
+    top: 340px;
+    @include text (11px, 500, 20px, $accent-color);
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.slider__button{
+@extend %button;
+position: absolute;
+}
+
+
+.slider__button--prev{
+top: 434px;
+}
+
+.slider__button--next{
+    top: 434px;
+    left: 260px;
+}
+
+.comments__cards{
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+    margin-bottom: 56px;
+}
+
+.comments__card{
+    margin-right: 10px;
+}
+.comments__card:nth-last-of-type(1){
+    margin-right: 0px;
+}
+.comments__card:nth-of-type(n+4){
+    display: none;
+}
+
+
+.comments__img{
+    border-radius: 28px;
+}
+
+@media (min-width: 768px){
+.comments__title{
+    @include text (26px, 800, 30px, $primary-color-dark);
+}
+.slider__card{
+    display: flex;
+    padding-top: 38px;
+    padding-bottom: 46px;
+    padding-right: 80px;
+    padding-left: 0px;
+}
+.comments__card:nth-of-type(n+4){
+    display: block;
+}
+.comments__img{
+    border: 3px solid transparent;
+}
+
+.comments__img:hover{
+    border: 3px solid $accent-color;
+}
+.slider__foto{
+    min-width: 160px;
+}
+.slider__name{
+    text-align: start;
+    @include text (18px, 700, 29px, $accent-color);
+}
+.slider__blok--text{
+    max-height: 170px;
+}
+.slider__about{
+    text-align: start;
+    @include text (13px, 500, 17px, $color-text-light);
+
+}
+.slider__text{
+    text-align: start;
+}
+.slider__button--prev{
+    top: 50%;
+    left: -16px;
+}
+.slider__button--next{
+    top: 50%;
+    left: 684px;
+}
+.slider__link{
+    top: 214px;
+    left: 358px;
+}
+
+}
+
+@media (min-width: 1280px){
+
+.comments__title{
+    @include text (42px, 800, 62px, $primary-color-dark);
+    padding-top: 84px;
+}
+.slider__list{
+    padding-right: 78px;
+    padding-left: 78px;
+}
+.slider__name{
+    @include text (25px, 700, 29px, $accent-color);
+    padding-bottom: 14px;
+}
+.slider__about{
+    margin-bottom: 24px;
+}
+.slider__text{
+    @include text (17px, 500, 29px, $primary-color-dark);
+}
+.slider__link{
+    @include text (17px, 500, 29px, $accent-color);
+}
+.slider__blok--text{
+    max-height: 170px;
+}
+
+.slider__link{
+    top: 238px;
+    left: 670px;
+}
+.slider__button--prev{
+    left: 24px;
+}
+.slider__button--next{
+    left: 1162px;
+}
+.comments__cards{
+    padding-top: 70px;
+    margin-bottom: 100px;
+}
+.comments__card{
+    margin-right: 36px;
+}
+.comments__card:nth-last-of-type(1){
+    margin-right: 0px;
+}
+
+
+}
+
+@media (min-width: 1680px){
+
+    .comments__title{
+        @include text (46px, 800, 62px, $primary-color-dark);
+        padding-top: 110px;
+        margin-bottom: 30px;
+    }
+    .slider__img{
+        min-width: 150px;
+        border-radius: 75px;
+        top: 52px;
+        left: 72px;
+    }
+    .slider__list{
+        padding-right: 154px;
+        padding-left: 120px;
+    }
+    .slider__card{
+        // padding-left: 268px;
+        padding-right: 100px;
+    }
+    .slider__foto{
+        min-width: 268px;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .slider__link{
+        top: 266px;
+        left: 596px;
+    }
+    .slider__button--prev {
+        left: 68px;
+    }
+    .slider__button--next {
+        left: 1213px;
+    }
+    .comments__cards {
+        padding-top: 42px;
+        margin-bottom: 120px;
+    }
+
+
+}

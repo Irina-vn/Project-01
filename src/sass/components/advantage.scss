@@ -1,0 +1,138 @@
+
+.advantage{
+    position: relative;
+}
+
+.advantage__title{
+    @include text (20px, 800, 30px, $color-text-white);
+    max-width: 140px;
+    position: absolute;
+    top: -483px; 
+}
+
+.advantage__list{
+    position: absolute;
+    top: -383px;
+    width: 280px;
+    background-color: $color-text-white;
+    font-size: 15px;
+    font-weight: 700;
+    box-shadow: 10px 15px 36px rgba(0,0,0,0.11);
+    counter-reset: section;
+}
+.advantage__item{
+    @include text (13px, 700, 20px, $primary-color-dark);
+    position: relative;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+.advantage__item:nth-last-child(1){
+    margin-bottom: 48px;
+}
+
+.advantage__item::before{
+    display: block;
+    content: "";
+    height: 2px;
+    width: 25px;
+    background-color: $accent-color;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.advantage__item::after{
+    counter-increment: section;
+    content: "0" counter(section);
+    color: $accent-color;
+    display: block;
+    font-weight: 700;
+    position: absolute;
+    top: -6px;
+    left: 64px;
+}
+
+@media (min-width: 768px){
+
+.advantage__list{
+    top: -134px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 690px;
+    padding-right: 104px;
+    padding-left: 104px;
+    padding-bottom: 28px;
+}
+.advantage__item{
+    width: 214px;
+    padding: 0px;
+}
+
+.advantage__item:nth-of-type(2n){
+    margin-left: 54px;
+}
+.advantage__item::after{
+    top: 14px;
+}
+.advantage__item:nth-last-child(1){
+    margin-bottom: 0px;
+}
+
+.advantage__title{
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: -216px;
+    @include text (26px, 800, 33px, $color-text-white);
+    max-width: none;
+}
+
+
+}
+@media (min-width: 1280px){
+.advantage__title{
+    @include text (42px, 800, 56px, $color-text-white);
+    top: -316px;
+}
+
+.advantage__list{
+    min-width: 1212px;
+    top: -260px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.advantage__item:nth-of-type(2n){
+    margin-left: 0px;
+}
+.advantage__item{
+    @include text (18px, 700, 29px, $primary-color-dark);
+    margin-right: 84px;
+    min-width: 276px;
+}
+.advantage__item::after{
+    font-size: 21px;
+}
+
+
+.advantage__item:nth-of-type(3n){
+    margin-right: 0px;
+}
+
+}
+
+@media (min-width: 1680px){
+    .advantage__title{
+        @include text (46px, 800, 62px, $color-text-white);
+    }
+    .advantage__list{
+        min-width: 1340px;
+        padding-right: 64px;
+        padding-left: 88px;
+    }
+    .advantage__item{
+        @include text (21px, 700, 29px, $primary-color-dark);
+    }
+    .advantage__item{
+        min-width: 340px;
+    }
+
+
+
+}
