@@ -68,6 +68,7 @@ input:focus:invalid:required{
     background-color: $accent-color;
     padding: 14px;
     margin-bottom: 36px;
+    cursor: pointer;
 }
 
 @media (min-width: 768px){
@@ -79,6 +80,8 @@ input:focus:invalid:required{
 }
 .registration__text{
     @include text (15px, 600, 20px, $color-text-white);
+    padding-left: 116px;
+    padding-right: 120px;
 }
 .registration__text--orange{
     @include text (15px, 600, 20px, $accent-color);
@@ -91,9 +94,9 @@ input:focus:invalid:required{
 .contacts__link-instagram{
     padding-left: 30px;
 }
-.form__button{
-    letter-spacing: 2px;
-}
+// .form__button{
+//     letter-spacing: 2px;
+// }
 
 }
 
@@ -127,10 +130,9 @@ input:focus:invalid:required{
     .form__button{
         @include text (14px, 600, 20px, $color-text-white);
         padding: 30px 22px;
-        letter-spacing: 4px;
+        letter-spacing: 2px;
         margin-bottom: 98px;
     }
-
 }
 
 @media (min-width: 1680px){

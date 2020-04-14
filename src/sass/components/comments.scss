@@ -61,7 +61,8 @@ box-shadow: 8px 8px 36px 10px rgba(0,0,0,0.11);
 
 .slider__link{
     position: absolute;
-    top: 340px;
+    top: 342px;
+    left: 96px;
     @include text (11px, 500, 20px, $accent-color);
     text-decoration-line: underline;
     cursor: pointer;

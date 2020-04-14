@@ -31,6 +31,9 @@
 }
 
 @media (min-width: 768px){
+    // .contacts__phone{
+    //     order: 2;
+    // }
 .contacts__phone{
     @include text (20px, 600, 38px, $primary-color-dark);
     order: 2;
@@ -69,20 +72,26 @@
     .contacts__logo{
         margin: 0px;
     }
+    // .contacts__phone{
+    //     padding-left: 312px;
+    // }
 
     .contacts__phone{
         @include text (27px, 600, 38px, $primary-color-dark);
         padding-left: 312px;
     }
     .contacts__phone::before{
-        left: 332px;
+        left: 288px;
     }
 
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1680px){
     .contacts__phone{
         padding-left: 360px;
+    }
+    .contacts__phone::before {
+        left: 328px;
     }
 
 

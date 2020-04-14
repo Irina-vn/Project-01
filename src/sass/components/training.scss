@@ -26,6 +26,7 @@
     padding: 14px 20px;
     margin-left: 16px;
     margin-bottom: 36px;
+    cursor: pointer;
 }
 
 .training__button a{
@@ -136,13 +137,30 @@
 
 .training__text{
     position: absolute;
-    left: 46px;
-    top: 10px;
+    left: 72px;
+    top: 32px;
     min-width: 240px;
 }
 .training__list{
     display: flex;
     justify-content: end;
+}
+
+.training__svg{
+    padding-bottom: 30px;
+    padding-left: 28px;
+    padding-right: 32px;
+    padding-top: 30px;
+}
+.training__svg::before{
+    height: 74px;
+    top: 17px;
+    left: 103px;
+}
+
+.training__svg svg{
+    width: 44px;
+    height: 44px;
 }
 
 }
@@ -170,7 +188,6 @@
 }
 .training__item{
     @include text (21px, 700, 33px, $primary-color-dark);
-    
 }
 .training__item:nth-of-type(1){
     margin-right: 422px;
@@ -195,10 +212,10 @@
     left: 107px;
 }
 
-.training__svg svg{
-    width: 44px;
-    height: 44px;
-}
+// .training__svg svg{
+//     width: 44px;
+//     height: 44px;
+// }
 .training__list{
     padding-top: 110px;
     margin-bottom: 122px;
